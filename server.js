@@ -18,6 +18,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.send('✅ Backend is running!');
+});
 // Routes
 app.use('/api/remainders', remainderRoutes);
 
