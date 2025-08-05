@@ -30,7 +30,7 @@ const remainderSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Occasion is required'],
     enum: {
-      values: ['birthday', 'anniversary', 'meeting', 'appointment', 'other'],
+      values: ['birthday', 'anniversary', 'other'],
       message: '{VALUE} is not a valid occasion type'
     }
   },
